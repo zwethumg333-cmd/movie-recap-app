@@ -4,27 +4,25 @@
     "slug": "movie-recap-app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "android": {
-      "package": "com.channelmsk.movierecap",
-      "adaptiveIcon": {
-        "backgroundColor": "#FF0000"
-      }
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
-    "plugins": [
-      [
-        "expo-media-library",
-        {
-          "photosPermission": "Allow MovieRecap to save videos to your gallery.",
-          "savePhotosPermission": "Allow MovieRecap to save videos to your gallery."
-        }
-      ],
-      [
-        "expo-av",
-        {
-          "microphonePermission": "Allow MovieRecap to access the microphone for voiceover."
-        }
-      ]
-    ]
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.zwethumg.movierecapapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
